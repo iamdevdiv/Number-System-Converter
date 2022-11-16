@@ -336,7 +336,7 @@ if __name__ == "__main__":
     print("----- NUMBER SYSTEM CONVERTER -----")
     while True:
         num = input("\nEnter space-seperated values of:\n1. The number to be converted\n2. Its base\n3. The base to which you want it to convert\n(or q to exit)\n")
-        if num == "q":
+        if num.lower() == "q":
             break
 
         try:
