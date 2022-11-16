@@ -49,7 +49,7 @@ class NumberSystemConverter():
 
     def is_valid(self, num: str, num_base: int, conversion_base: int) -> bool:
         if type(num_base) != int:
-            raise TypeError("Hi", f"integer argument expected in num_base, got {type(num_base).__name__}")
+            raise TypeError(f"integer argument expected in num_base, got {type(num_base).__name__}")
         elif type(conversion_base) != int:
             raise TypeError(f"integer argument expected in conversion_base, got {type(conversion_base).__name__}")
         elif type(num) != str:
@@ -82,7 +82,7 @@ class NumberSystemConverter():
         table = num.maketrans(normal, sub_s)
         return num.translate(table)
     
-    # Converts binary/octal/hexadecimal numer to decimal number
+    # Converts binary/octal/hexadecimal number to decimal number
     def to_decimal(self, num: str, num_base: int) -> None:
         integer_part, fraction_part = num.split(".")[0], ""
         if "." in num:
