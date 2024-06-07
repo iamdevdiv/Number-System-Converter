@@ -1,4 +1,4 @@
-class NumberSystemConverter():
+class NumberSystemConverter:
     def __init__(self) -> None:
         self.digits = {  # base: digits
             2: ["0", "1", "."],
